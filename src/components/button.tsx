@@ -1,16 +1,22 @@
-import { ActivityIndicator, Text, TouchableOpacity } from "react-native";
+import {
+  ActivityIndicator,
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from "react-native";
 
-type Props = {
+type Props = TouchableOpacityProps & {
   title: string;
   isLoading?: boolean;
 };
 
-export function Button({ title, isLoading = false }: Props) {
+export function Button({ title, isLoading = false, ...rest }: Props) {
   return (
     <TouchableOpacity
       activeOpacity={0.7}
       disabled={isLoading}
       className="w-full h-14 bg-orange-500 items-center justify-center rounded-lg"
+      {...rest}
     >
       {isLoading ? (
         <ActivityIndicator className="text-green-500" />
