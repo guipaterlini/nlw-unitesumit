@@ -1,7 +1,8 @@
-import "../styles/global.css";
+import "@/styles/global.css";
 
 import { Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+
 import { Loading } from "@/components/loading";
 
 import {
