@@ -11,7 +11,7 @@ export default function Register() {
   return (
     <View className="flex-1 bg-green-500 items-center justify-center p-8">
       <StatusBar barStyle="light-content" />
-      
+
       <Image
         source={require("@/assets/logo.png")}
         className="h-16"
@@ -36,7 +36,7 @@ export default function Register() {
           <Input.Field placeholder="E-mail" keyboardType="email-address" />
         </Input>
 
-        <Button title="Acessar credencial" />
+        <Button title="Realizar Inscrição" />
 
         <Link
           href="/"
